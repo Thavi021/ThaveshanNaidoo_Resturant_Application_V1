@@ -24,7 +24,7 @@ namespace ThaveshanNaidoo_Resturant_Application_V1
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\Thaveshan Naidoo\source\repos\ThaveshanNaidoo_Resturant_Application_V1\ThaveshanNaidoo_Resturant_Application_V1\App_Data\ResturantDatabase.mdf;Integrated Security=True");
             SqlCommand cmd;
-            cmd = new SqlCommand("INSERT INTO [dbo].[DirectorTable]" +
+            cmd = new SqlCommand("INSERT INTO [dbo].[BartenderTable]" +
                 "(Email," +
                 "Password," +
                 "Confirm Password," +
