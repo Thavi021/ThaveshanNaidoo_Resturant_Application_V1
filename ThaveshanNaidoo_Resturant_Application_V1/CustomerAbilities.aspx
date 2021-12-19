@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:Button ID="CustomerPlaceOrderButton" runat="server" Text="Place Order" />
-
+            <asp:Button ID="Button1" runat="server" Text="SPONSER" />
             <asp:Button ID="CustomerContactButton" runat="server" Text="Contact Us" />
 
         
