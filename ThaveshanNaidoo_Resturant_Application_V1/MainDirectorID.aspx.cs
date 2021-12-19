@@ -58,7 +58,8 @@ namespace ThaveshanNaidoo_Resturant_Application_V1
                 "CV," +
                 "Residential Address," +
                 "Proof of Residence)" +
-                "VALUES(@Email," +
+                "VALUES(" +
+                "@Email," +
                 "@Password," +
                 "@Confirm_Password," +
                 "@ID_Number," +
@@ -79,20 +80,21 @@ namespace ThaveshanNaidoo_Resturant_Application_V1
             cmd.Parameters.AddWithValue("@Email",DirectorRegisterEmailTextbox);
             cmd.Parameters.AddWithValue("@Password", "----");
             cmd.Parameters.AddWithValue("@Confirm_Password", "----");
-            cmd.Parameters.AddWithValue("@ID_Number", DirectorIDNumberTextbox);
-            cmd.Parameters.AddWithValue("@Business_Registration_Number", BusinessRegistrationNumberTextbox);
-            cmd.Parameters.AddWithValue("@TAX_Number", TaxVatNumberTextbox);
+            cmd.Parameters.AddWithValue("@ID_Number", float.Parse(this.DirectorIDNumberTextbox.Text));
+            cmd.Parameters.AddWithValue("@Business_Registration_Number", float.Parse(this.BusinessRegistrationNumberTextbox.Text));
+            cmd.Parameters.AddWithValue("@TAX_Number", float.Parse(this.TaxVatNumberTextbox.Text));
             cmd.Parameters.AddWithValue("@First_Name", DirectorFirstNameTextbox);
             cmd.Parameters.AddWithValue("@Middle_Name", DirectorMiddleNameTextbox);
             cmd.Parameters.AddWithValue("@Last Name", DirectorLastNameTextbox);
             cmd.Parameters.AddWithValue("@Date_Of_Birth", Calender1);
-            cmd.Parameters.AddWithValue("@Medical_Aid_Number", DirectorMedicalAidNumberTextbox);
+            cmd.Parameters.AddWithValue("@Medical_Aid_Number", float.Parse(this.DirectorMedicalAidNumberTextbox.Text));
             cmd.Parameters.AddWithValue("@Mobile_Phone_Number", DirectorMobilePhoneNumberTextbox);
             cmd.Parameters.AddWithValue("@Home_Telephone_Number", DirectorHomeTelephoneNumberTextbox);
             cmd.Parameters.AddWithValue("@Work_Number", DirectorWorkNumberTextbox);
-            cmd.Parameters.AddWithValue("@CV", "----");
+            //cmd.Parameters.AddWithValue("@CV", "----");
             cmd.Parameters.AddWithValue("@Residential_Address", DirectorResidentialAddressTextbox);
-            cmd.Parameters.AddWithValue("@Proof_of_Residence", "-----");
+            //cmd.Parameters.AddWithValue("@Proof_of_Residence", "-----");
+            //cmd.Parameters.AddWithValue("@Copy_Of_ID", "-----");
 
             conn.Open();
             cmd.ExecuteNonQuery();

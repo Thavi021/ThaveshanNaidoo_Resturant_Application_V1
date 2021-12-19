@@ -13,5 +13,21 @@ namespace ThaveshanNaidoo_Resturant_Application_V1
         {
 
         }
+
+        protected void PayBillButton_Click(object sender, EventArgs e)
+        {
+            new saleclass = new CalculateSaleClass();
+            saleClass.CalculateSale(float.Parse(this.X.Text), float.Parse(this.TotalWeeksTextBox.Text), float.Parse(this.HoursStudiedTextBox.Text));
+
+        }
+
+        protected void OpenOrderButton_Click(object sender, EventArgs e)
+        {
+            //sellect 
+            //0. Starter
+            //1.food
+            //2.drink.
+            //3.dessert
+        }
     }
 }
