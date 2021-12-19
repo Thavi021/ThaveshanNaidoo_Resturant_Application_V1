@@ -8,8 +8,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
+        <div >
+            <asp:Button ID="DirectorRegisterButton" runat="server" Text="Register" OnClick="DirectorRegisterButton_Click" />
+</div>
     </form>
 </body>
 </html>

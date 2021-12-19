@@ -13,5 +13,7 @@ namespace ThaveshanNaidoo_Resturant_Application_V1
         {
 
         }
+        //Director can do a certain amount of things.
+
     }
 }
