@@ -148,6 +148,7 @@
     <Content Include="MainValetID.aspx" />
     <Content Include="MainWaiterID.aspx" />
     <Content Include="ManagerAbilities.aspx" />
+    <Content Include="MENU.aspx" />
     <Content Include="ScullaryAbilities.aspx" />
     <Content Include="SupervisorAbilities.aspx" />
     <Content Include="ValetAbilities.aspx" />
@@ -212,6 +213,7 @@
     <Compile Include="BartenderAbilities.aspx.designer.cs">
       <DependentUpon>BartenderAbilities.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CalculateSaleClass.cs" />
     <Compile Include="CleaningStaffAbilities.aspx.cs">
       <DependentUpon>CleaningStaffAbilities.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -354,6 +356,13 @@
     </Compile>
     <Compile Include="ManagerAbilities.aspx.designer.cs">
       <DependentUpon>ManagerAbilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MENU.aspx.cs">
+      <DependentUpon>MENU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MENU.aspx.designer.cs">
+      <DependentUpon>MENU.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScullaryAbilities.aspx.cs">

@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace ThaveshanNaidoo_Resturant_Application_V1
 {
-    public partial class _Default : Page
+    public partial class MENU : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Redirect("WELCOME.aspx");
+
         }
     }
 }

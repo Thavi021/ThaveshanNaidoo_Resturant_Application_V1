@@ -1,4 +1,6 @@
-﻿using System;
+﻿//I Have created this application to help upcoming resturants manage their business easily and constructively.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +13,7 @@ namespace ThaveshanNaidoo_Resturant_Application_V1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

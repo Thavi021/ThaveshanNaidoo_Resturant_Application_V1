@@ -9,7 +9,8 @@
 <body>
     <form id="form1" runat="server">
         <div >
-            <asp:Button ID="DirectorRegisterButton" runat="server" Text="Register" OnClick="DirectorRegisterButton_Click" />
+            <asp:Button ID="DirectorRegisterButton" runat="server" Text="ORDER READY" OnClick="DirectorRegisterButton_Click" />
+            <asp:Button ID="MENUITEM" runat="server" Text="ADD MENU ITEM" OnClick="MENUITEMButton_Click" />
 </div>
     </form>
 </body>
